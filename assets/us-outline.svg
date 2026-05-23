@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600">
+  <rect width="960" height="600" fill="#eef5fb"/>
+  <path d="M125 185 C180 145,250 145,310 158 C385 132,470 135,545 160 C590 145,650 160,700 190 C760 190,810 225,840 270 C805 305,780 345,735 360 C700 405,650 415,610 425 C575 460,535 455,500 430 C455 445,410 430,380 405 C335 415,300 395,272 365 C225 370,182 340,165 295 C135 270,110 230,125 185Z" fill="#dce8f4" stroke="#a5b8ca" stroke-width="3"/>
+  <path d="M140 480 C170 455,230 455,270 485 C230 520,175 522,140 480Z" fill="#dce8f4" stroke="#a5b8ca" stroke-width="3"/>
+  <path d="M265 518 C285 505,315 505,335 522 C315 540,285 540,265 518Z" fill="#dce8f4" stroke="#a5b8ca" stroke-width="3"/>
+  <text x="480" y="555" text-anchor="middle" fill="#60758a" font-family="Arial" font-size="20">Approximate visitor locations by state / region</text>
+</svg>

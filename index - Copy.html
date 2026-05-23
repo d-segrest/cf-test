@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Professional Portfolio | Resume and Work Samples</title>
+  <meta name="description" content="Professional resume, portfolio, cybersecurity work samples, documents, media, and contact information." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">Your Name</div>
+      <div class="nav-links" aria-label="Portfolio sections">
+        <a href="#overview" data-tab-link="overview">Overview</a>
+        <a href="#resume" data-tab-link="resume">Resume</a>
+        <a href="#samples" data-tab-link="samples">Work Samples</a>
+        <a href="#media" data-tab-link="media">Media</a>
+        <a href="#analytics" data-tab-link="analytics">Visitors</a>
+        <a href="#contact" data-tab-link="contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero-grid" id="overview">
+      <div class="hero-copy">
+        <p class="eyebrow">Cybersecurity • Detection Engineering • Splunk • SIEM</p>
+        <h1>Security engineering portfolio, resume, and selected work samples.</h1>
+        <p class="lead">
+          Replace this text with a concise professional summary. Keep it direct: what you do,
+          what environments you support, and what outcomes you produce. This opening panel is intentionally
+          wider and easier to read so the main message can take up most of the first screen.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#resume" data-tab-link="resume">Choose Resume Version</a>
+          <a class="button secondary" href="#samples" data-tab-link="samples">View Work Samples</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/hero-security.svg" alt="" />
+        <div class="hero-art-actions">
+          <a class="button primary" href="#resume" data-tab-link="resume">Choose Resume Version</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="ticker-wrap" aria-label="Professional highlights">
+      <div class="ticker">
+        <span>SIEM Engineering</span>
+        <span>Detection Development</span>
+        <span>Splunk Cloud</span>
+        <span>CIM Normalization</span>
+        <span>Dashboards</span>
+        <span>Runbooks</span>
+        <span>Incident Response</span>
+        <span>Security Operations</span>
+      </div>
+    </section>
+
+    <div class="tab-shell" aria-label="Portfolio tabs">
+      <div class="tab-bar" role="tablist" aria-label="Portfolio content tabs">
+        <button class="tab-button active" type="button" role="tab" aria-selected="true" data-tab="resume">Resume</button>
+        <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="samples">Work Samples</button>
+        <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="media">Media + Notes</button>
+        <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="analytics">Visitor Map</button>
+        <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="contact">Contact</button>
+      </div>
+
+      <section class="tab-panel active" id="resume" data-tab-panel="resume" role="tabpanel">
+        <div class="section card featured-card">
+          <div>
+            <p class="section-kicker">Resume</p>
+            <h2>Downloadable resume files</h2>
+            <p>
+              Put your actual resume files in the <code>media</code> folder and keep the file names below,
+              or edit the links in <code>index.html</code>. This content now sits inside a tab so the page does
+              not feel endless or visually truncated.
+            </p>
+          </div>
+          <div class="resume-selector" aria-label="Resume version downloads">
+            <a class="resume-choice" href="media/resume-a.pdf" download data-track="resume_a_pdf">
+              <strong>A</strong><span>Resume A</span><small>Download PDF</small>
+            </a>
+            <a class="resume-choice" href="media/resume-b.pdf" download data-track="resume_b_pdf">
+              <strong>B</strong><span>Resume B</span><small>Download PDF</small>
+            </a>
+            <a class="resume-choice" href="media/resume-c.pdf" download data-track="resume_c_pdf">
+              <strong>C</strong><span>Resume C</span><small>Download PDF</small>
+            </a>
+            <a class="resume-choice" href="media/resume-d.pdf" download data-track="resume_d_pdf">
+              <strong>D</strong><span>Resume D</span><small>Download PDF</small>
+            </a>
+            <a class="resume-choice" href="media/resume-e.pdf" download data-track="resume_e_pdf">
+              <strong>E</strong><span>Resume E</span><small>Download PDF</small>
+            </a>
+          </div>
+          <p class="resume-note">
+            Rename your five resume versions in the <code>media</code> folder as <code>resume-a.pdf</code>,
+            <code>resume-b.pdf</code>, <code>resume-c.pdf</code>, <code>resume-d.pdf</code>, and <code>resume-e.pdf</code>.
+          </p>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="samples" data-tab-panel="samples" role="tabpanel" hidden>
+        <div class="section">
+          <p class="section-kicker">Portfolio</p>
+          <h2>Selected work samples</h2>
+          <div class="sample-grid">
+            <article class="sample-card">
+              <h3>Detection Engineering Sample</h3>
+              <p>Sanitized detection logic, tuning notes, validation steps, and expected analyst workflow.</p>
+              <a href="media/detection-engineering-sample.pdf" data-track="sample_detection_pdf">Open PDF</a>
+            </article>
+            <article class="sample-card">
+              <h3>Splunk Architecture / Data Flow</h3>
+              <p>High-level architecture narrative, ingestion flow, normalization approach, and operational considerations.</p>
+              <a href="media/splunk-architecture-sample.pdf" data-track="sample_architecture_pdf">Open PDF</a>
+            </article>
+            <article class="sample-card">
+              <h3>Runbook / Playbook</h3>
+              <p>Example procedure showing triage logic, escalation criteria, and documentation style.</p>
+              <a href="media/runbook-sample.docx" data-track="sample_runbook_docx">Open DOCX</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="media" data-tab-panel="media" role="tabpanel" hidden>
+        <div class="section split">
+          <div class="card">
+            <p class="section-kicker">Media</p>
+            <h2>Video and audio samples</h2>
+            <p>Use this area for a short walkthrough, demo, or spoken professional summary.</p>
+            <div class="media-box">
+              <h3>Video sample</h3>
+              <video controls preload="metadata" poster="assets/video-poster.svg" data-track="video_play">
+                <source src="media/portfolio-demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-box">
+              <h3>Audio overview</h3>
+              <audio controls preload="metadata" data-track="audio_play">
+                <source src="media/audio-overview.mp3" type="audio/mpeg" />
+                Your browser does not support the audio tag.
+              </audio>
+            </div>
+          </div>
+
+          <div class="card">
+            <p class="section-kicker">Scrollable notes</p>
+            <h2>Text boxes for details</h2>
+            <div class="scrollbox">
+              <h3>Professional summary</h3>
+              <p>
+                Paste a longer professional narrative here. This box scrolls, so the page stays clean while still
+                allowing detailed explanations of complex work, architecture, detection logic, or leadership experience.
+              </p>
+              <p>
+                Example: Describe the problem, environment, tools used, your role, measurable result, and what was sanitized.
+              </p>
+            </div>
+            <div class="scrollbox">
+              <h3>Sample notes</h3>
+              <p>
+                Explain what each attached work sample demonstrates. Avoid proprietary data, customer names,
+                internal hostnames, private IP addresses, screenshots with sensitive details, or confidential diagrams.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="analytics" data-tab-panel="analytics" role="tabpanel" hidden>
+        <div class="section card">
+          <div class="analytics-head">
+            <div>
+              <p class="section-kicker">Visitor analytics</p>
+              <h2>Visit count and approximate state-level map</h2>
+              <p>
+                This uses a Cloudflare Function and KV binding when enabled. It aggregates by state/region and
+                does not show raw IP addresses on the page.
+              </p>
+            </div>
+            <div class="counter">
+              <span id="visitCount">—</span>
+              <small>recorded visits</small>
+            </div>
+          </div>
+          <div class="map-layout">
+            <div class="map-card">
+              <svg id="usMap" viewBox="0 0 960 600" role="img" aria-label="United States visitor map">
+                <image href="assets/us-outline.svg" x="0" y="0" width="960" height="600"></image>
+                <g id="pins"></g>
+              </svg>
+            </div>
+            <div class="state-list">
+              <h3>Recent state / region counts</h3>
+              <div id="stateCounts">Analytics not loaded yet.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="contact" data-tab-panel="contact" role="tabpanel" hidden>
+        <div class="section card">
+          <p class="section-kicker">Contact</p>
+          <h2>Contact information</h2>
+          <p>Email: <a href="mailto:your.email@example.com" data-track="email_click">your.email@example.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/" data-track="linkedin_click">Add your LinkedIn URL</a></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Name. Portfolio materials are sanitized for public sharing.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
