@@ -4,8 +4,7 @@
 	"compatibility_flags": ["nodejs_compat"],
 	"main": "_worker.js",
 	"assets": {
-		"directory": "./dist",
-		"binding": "ASSETS"
+		"directory": "."
 	},
 	"observability": {
 		"enabled": true
