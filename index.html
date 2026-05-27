@@ -3,353 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dan Segrest | Cybersecurity, SIEM, Cloud & AI/ML</title>
+  <title>Dan Segrest | Resume and Work Samples</title>
   <meta name="description" content="Professional resume, cybersecurity portfolio, Splunk engineering, cloud security, AI/ML projects, and selected work samples." />
-
-  <style>
-    :root {
-      --bg: #0b1220;
-      --bg-soft: #111a2e;
-      --card: rgba(255,255,255,0.075);
-      --card-strong: rgba(255,255,255,0.11);
-      --text: #eef4ff;
-      --muted: #a9b6c9;
-      --accent: #66d9e8;
-      --accent-2: #8ab4ff;
-      --border: rgba(255,255,255,0.14);
-      --shadow: 0 20px 60px rgba(0,0,0,0.35);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(102,217,232,0.18), transparent 30%),
-        radial-gradient(circle at top right, rgba(138,180,255,0.16), transparent 35%),
-        var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
-      padding: 24px;
-    }
-
-    .nav {
-      max-width: 1160px;
-      margin: 0 auto 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .brand {
-      font-size: 1.35rem;
-      font-weight: 800;
-      letter-spacing: 0.03em;
-    }
-
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      font-size: 0.95rem;
-    }
-
-    .nav-links a {
-      color: var(--muted);
-    }
-
-    .hero-grid {
-      max-width: 1160px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1.4fr 0.8fr;
-      gap: 36px;
-      align-items: center;
-      padding: 46px;
-      border: 1px solid var(--border);
-      border-radius: 28px;
-      background: linear-gradient(135deg, rgba(255,255,255,0.10), rgba(255,255,255,0.04));
-      box-shadow: var(--shadow);
-    }
-
-    .eyebrow,
-    .section-kicker {
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.13em;
-      font-size: 0.78rem;
-      font-weight: 800;
-      margin: 0 0 10px;
-    }
-
-    h1 {
-      font-size: clamp(2.4rem, 6vw, 4.8rem);
-      line-height: 1.02;
-      margin: 0 0 22px;
-    }
-
-    h2 {
-      font-size: clamp(1.5rem, 3vw, 2.25rem);
-      line-height: 1.15;
-      margin: 0 0 16px;
-    }
-
-    h3 {
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-
-    .lead {
-      max-width: 760px;
-      font-size: 1.13rem;
-      color: var(--muted);
-      margin-bottom: 26px;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 12px 18px;
-      border-radius: 999px;
-      font-weight: 800;
-      border: 1px solid var(--border);
-    }
-
-    .button.primary {
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      color: #06101d;
-    }
-
-    .button.secondary {
-      color: var(--text);
-      background: rgba(255,255,255,0.08);
-    }
-
-    .hero-art {
-      display: flex;
-      justify-content: center;
-    }
-
-    .hero-art img {
-      width: min(260px, 100%);
-      border-radius: 26px;
-      border: 1px solid var(--border);
-      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
-      background: rgba(255,255,255,0.08);
-    }
-
-    main {
-      max-width: 1160px;
-      margin: 0 auto;
-      padding: 0 24px 56px;
-    }
-
-    .ticker-wrap {
-      overflow: hidden;
-      margin: 28px 0;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      color: var(--muted);
-    }
-
-    .ticker {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      padding: 16px 0;
-    }
-
-    .ticker span {
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.07);
-      border: 1px solid var(--border);
-      font-size: 0.9rem;
-      white-space: nowrap;
-    }
-
-    .section {
-      margin: 28px 0;
-    }
-
-    .card {
-      padding: 28px;
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      background: var(--card);
-      box-shadow: var(--shadow);
-    }
-
-    .resource-grid,
-    .sample-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 16px;
-      margin-top: 18px;
-    }
-
-    .resource,
-    .sample-card {
-      display: block;
-      padding: 18px;
-      border-radius: 18px;
-      background: var(--card-strong);
-      border: 1px solid var(--border);
-    }
-
-    .resource strong {
-      display: block;
-      color: var(--text);
-      font-size: 1.05rem;
-      margin-bottom: 6px;
-    }
-
-    .resource span,
-    .sample-card p {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .split {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-    }
-
-    .media-box {
-      margin-top: 18px;
-    }
-
-    video {
-      width: 100%;
-      border-radius: 18px;
-      border: 1px solid var(--border);
-      background: #000;
-    }
-
-    .scrollbox {
-      max-height: 430px;
-      overflow: auto;
-      padding: 20px;
-      margin-top: 18px;
-      border-radius: 18px;
-      background: rgba(0,0,0,0.20);
-      border: 1px solid var(--border);
-    }
-
-    .professional-summary p {
-      margin: 0 0 14px;
-    }
-
-    .skill-strip {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 16px 0 18px;
-    }
-
-    .skill-strip span {
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: rgba(102,217,232,0.10);
-      border: 1px solid rgba(102,217,232,0.22);
-      color: #dffbff;
-      font-size: 0.82rem;
-      font-weight: 700;
-    }
-
-    .analytics-head {
-      display: flex;
-      justify-content: space-between;
-      gap: 24px;
-      align-items: center;
-    }
-
-    .counter {
-      min-width: 150px;
-      padding: 18px;
-      border-radius: 20px;
-      text-align: center;
-      background: var(--card-strong);
-      border: 1px solid var(--border);
-    }
-
-    .counter span {
-      display: block;
-      font-size: 2rem;
-      font-weight: 900;
-    }
-
-    .counter small {
-      color: var(--muted);
-    }
-
-    .map-layout {
-      display: grid;
-      grid-template-columns: 1.5fr 0.8fr;
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .map-card,
-    .state-list {
-      padding: 18px;
-      border-radius: 20px;
-      background: rgba(0,0,0,0.18);
-      border: 1px solid var(--border);
-    }
-
-    svg {
-      width: 100%;
-      height: auto;
-    }
-
-    footer {
-      padding: 30px 24px;
-      text-align: center;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
-    }
-
-    @media (max-width: 850px) {
-      .hero-grid,
-      .split,
-      .map-layout {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-grid {
-        padding: 28px;
-      }
-
-      .analytics-head,
-      .nav {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -369,12 +25,10 @@
       <div class="hero-copy">
         <p class="eyebrow">Splunk • Google SecOps • Detection Engineering • SIEM • Cybersecurity • AI/ML</p>
 
-        <h1>Resume & selected work samples</h1>
+        <h1>Dan Segrest<br />Resume & selected work samples</h1>
 
         <p class="lead">
-          Welcome. I’m <strong>Dan Segrest</strong>, a cybersecurity, SIEM, cloud, and AI/ML engineering professional
-          with deep experience in Splunk Cloud, Google SecOps, detection engineering, data quality, endpoint security,
-          technical leadership, enterprise automation, and practical AI/ML development.
+          Welcome. I’m <b>Dan Segrest</b>, a cybersecurity, SIEM, cloud, and AI/ML engineering professional with deep experience in Splunk Cloud, Google SecOps, detection engineering, data quality, endpoint security, technical leadership, enterprise automation, and practical AI/ML development.
         </p>
 
         <div class="hero-actions">
@@ -383,8 +37,8 @@
         </div>
       </div>
 
-      <div class="hero-art">
-        <img src="assets/picture.png" alt="Professional profile image of Dan Segrest" />
+      <div class="hero-art" aria-hidden="true">
+        <img src="assets/picture.png" alt="" />
       </div>
     </section>
   </header>
@@ -410,16 +64,18 @@
     </section>
 
     <section class="section card" id="resume">
-      <p class="section-kicker">Resume</p>
-      <h2>Downloadable resume files</h2>
-      <p>
-        Comprehensive resume for ATS scanning and professional review.
-      </p>
+      <div>
+        <p class="section-kicker">Resume</p>
+        <h2>Downloadable resume files</h2>
+        <p>
+          Comprehensive resume for ATS scanning and professional review.
+        </p>
+      </div>
 
       <div class="resource-grid">
         <a class="resource" href="media/resume.pdf" data-track="resume_pdf">
           <strong>Resume PDF</strong>
-          <span>Best for recruiters, managers, and direct review</span>
+          <span>Best for recruiters and managers</span>
         </a>
 
         <a class="resource" href="media/dan_segrest.docx" data-track="resume_docx">
@@ -436,23 +92,17 @@
       <div class="sample-grid">
         <article class="sample-card">
           <h3>Detection Engineering</h3>
-          <p>
-            Examples of SIEM logic, tuning concepts, validation steps, and analyst workflow design.
-          </p>
+          <p>SIEM logic, tuning concepts, validation steps, and analyst workflow design.</p>
         </article>
 
         <article class="sample-card">
           <h3>Splunk / SIEM Architecture</h3>
-          <p>
-            Security telemetry design, ingestion flow, CIM normalization, dashboarding, and operational visibility.
-          </p>
+          <p>Security telemetry design, ingestion flow, CIM normalization, dashboards, and operational visibility.</p>
         </article>
 
         <article class="sample-card">
           <h3>AI/ML Engineering</h3>
-          <p>
-            Practical AI/ML work including local LLMs, RAG systems, transcription, diarization, and automation projects.
-          </p>
+          <p>Local LLMs, RAG systems, transcription, diarization, automation, and practical AI/ML projects.</p>
         </article>
       </div>
     </section>
@@ -461,9 +111,7 @@
       <div class="card">
         <p class="section-kicker">Media</p>
         <h2>Video and audio samples</h2>
-        <p>
-          Use this area for a short walkthrough, project demo, or spoken professional summary.
-        </p>
+        <p>Use this area for a short walkthrough, demo, or spoken professional summary.</p>
 
         <div class="media-box">
           <h3>Audio Enhancement Transcription Pipeline With Embedded LLM RAG</h3>
@@ -479,50 +127,38 @@
         <h2>Professional summary</h2>
 
         <div class="scrollbox">
-          <section class="professional-summary">
-            <p>
-              <strong>Dan Segrest</strong> is a senior cybersecurity, SIEM, cloud, and AI/ML engineering professional
-              with deep experience across Splunk Cloud, detection engineering, security operations, enterprise telemetry,
-              data quality, cloud security, and automation.
-            </p>
+          <h3>Cybersecurity, SIEM, Cloud & AI/ML Engineering</h3>
 
-            <div class="skill-strip">
-              <span>Splunk Cloud</span>
-              <span>Google SecOps</span>
-              <span>Wiz</span>
-              <span>AWS</span>
-              <span>Google Cloud</span>
-              <span>Azure</span>
-              <span>Cloudflare</span>
-              <span>Git</span>
-              <span>GitHub Desktop</span>
-              <span>CI/CD</span>
-            </div>
+          <p>
+            <strong>Dan Segrest</strong> is a senior cybersecurity, SIEM, cloud, and AI/ML engineering professional with deep experience across Splunk Cloud, detection engineering, security operations, enterprise telemetry, data quality, cloud security, and automation.
+          </p>
 
-            <p>
-              His background spans ingestion architecture, CIM normalization, datamodel engineering, search optimization,
-              queue health, endpoint telemetry integrity, dashboards, SOC enablement, MDR support, compliance visibility,
-              malware remediation, patch validation, and enterprise Windows automation.
-            </p>
+          <p>
+            His hands-on experience includes <strong>Splunk Cloud, Google SecOps, Wiz, AWS, Google Cloud, Azure, Cloudflare, Git, GitHub Desktop, web deployment workflows, and CI/CD-style publishing pipelines</strong>.
+          </p>
 
-            <p>
-              Dan’s earlier enterprise work in endpoint security, malware containment, patch remediation, antivirus health,
-              SCCM, WSUS, DHCP, DNS, intrusion prevention, Windows logs, and asset data gives him a practical understanding
-              of where security data originates, why it becomes unreliable, and how to turn it into action at scale.
-            </p>
+          <p>
+            His background spans ingestion architecture, CIM normalization, datamodel engineering, search optimization, queue health, endpoint telemetry integrity, dashboards, SOC enablement, MDR support, compliance visibility, malware remediation, patch validation, and enterprise Windows automation.
+          </p>
 
-            <p>
-              He also brings personnel management and technical leadership experience, including team guidance, employee
-              development, hiring participation, performance evaluation, stakeholder coordination, and translating complex
-              engineering issues into clear operational direction.
-            </p>
+          <p>
+            Dan’s earlier enterprise work in endpoint security, malware containment, patch remediation, antivirus health, SCCM, WSUS, DHCP, DNS, intrusion prevention, Windows logs, and asset data gives him a practical understanding of where security data originates, why it becomes unreliable, and how to turn it into action at scale.
+          </p>
 
-            <p>
-              Alongside his cybersecurity background, Dan has independently developed roughly
-              <strong>100 AI/ML projects</strong>, including local LLM deployments, RAG systems, transcription and
-              diarization tools, automation workflows, knowledge engineering, and AI-assisted operational analysis.
-            </p>
-          </section>
+          <p>
+            He also brings personnel management and technical leadership experience, including team guidance, employee development, hiring participation, performance evaluation, stakeholder coordination, and translating complex engineering issues into clear operational direction.
+          </p>
+
+          <p>
+            Alongside his cybersecurity background, Dan has independently developed roughly <strong>100 AI/ML projects</strong>, including local LLM deployments, RAG systems, transcription and diarization tools, automation workflows, knowledge engineering, and AI-assisted operational analysis.
+          </p>
+        </div>
+
+        <div class="scrollbox">
+          <h3>Sample notes</h3>
+          <p>
+            Work samples are sanitized for public sharing and are intended to demonstrate technical approach, architecture thinking, documentation style, detection engineering, automation, and operational problem solving.
+          </p>
         </div>
       </div>
     </section>
@@ -533,8 +169,7 @@
           <p class="section-kicker">Visitor analytics</p>
           <h2>Visit count and approximate state-level map</h2>
           <p>
-            This uses a Cloudflare Function and KV binding when enabled. It aggregates by state or region and does not
-            show raw IP addresses on the page.
+            This uses a Cloudflare Function and KV binding when enabled. It aggregates by state/region and does not show raw IP addresses on the page.
           </p>
         </div>
 
@@ -563,22 +198,19 @@
       <p class="section-kicker">Contact</p>
       <h2>Contact information</h2>
 
-      <p>
-        Email:
-        <a href="mailto:dan.segrest@gmail.com" data-track="email_click">dan.segrest@gmail.com</a>
-      </p>
+      <p>Email: <a href="mailto:dan.segrest@gmail.com" data-track="email_click">dan.segrest@gmail.com</a></p>
 
       <p>
         LinkedIn:
         <a href="https://www.linkedin.com/in/dan-segrest-80b2ba2/" data-track="linkedin_click">
-          linkedin.com/in/dan-segrest-80b2ba2
+          https://www.linkedin.com/in/dan-segrest-80b2ba2/
         </a>
       </p>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Dan Segrest. Portfolio materials are sanitized for public sharing.</p>
+    <p>© <span id="year"></span> 2026 Dan Segrest. Portfolio materials are sanitized for public sharing.</p>
   </footer>
 
   <script src="script.js"></script>
