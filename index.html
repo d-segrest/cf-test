@@ -1,216 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Professional Portfolio | Resume and Work Samples</title>
-  <meta name="description" content="Professional resume, portfolio, cybersecurity work samples, documents, media, and contact information." />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="hero">
-    <nav class="nav">
-      <div class="brand">Dan Segrest</div>
-      <div class="nav-links">
-        <a href="#resume">Resume</a>
-        <a href="#samples">Work Samples</a>
-        <a href="#media">Media</a>
-        <a href="#analytics">Visitors</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+.polished-summary {
+  padding: 1.5rem;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  border: 1px solid rgba(255,255,255,0.14);
+}
 
-    <section class="hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow"> Splunk • Google SecOps • Detection Engineering • SIEM • Cybersecurity</p>
-        <h1>Dan Segrest -resume</br>& selected work samples.</h1>
-        <p class="lead">
-          Welcome. I’m <b>Dan Segrest</b>, a cybersecurity and SIEM engineering professional with deep experience in Splunk, Google SecOps, detection engineering, data quality, endpoint security, leadership, and enterprise automation. I'm also showcases growing AI/ML skills. This site brings together my resume, selected work, career highlights, and technical focus in one place.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="media/resume.pdf" data-track="resume_pdf">Download Resume PDF</a>
-          <a class="button secondary" href="#samples">View Work Samples</a>
-        </div>
-      </div>
-      <div class="hero-art" aria-hidden="true">
-        <img src="assets/picture.png" alt="" />
-      </div>
-    </section>
-  </header>
+.polished-summary h2 {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
 
-  <main>
-    <section class="ticker-wrap" aria-label="Professional highlights">
-      <div class="ticker">
-        <span>SIEM Engineering</span>
-        <span>Detection Development</span>
-        <span>Splunk Cloud</span>
-        <span>CIM Normalization</span>
-        <span>Dashboards</span>
-        <span>Runbooks</span>
-        <span>Incident Response</span>
-        <span>Artificial Intelligence/Machine Learning AI/ML</span>
-        <span>Desktop Engineering</span>
-        <span>Technical Manager</span>
-        <span>Program Manager</span>
-      </div>
-    </section>
+.summary-lead {
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
 
-    <section class="section card" id="resume">
-      <div>
-        <p class="section-kicker">Resume</p>
-        <h2>Downloadable resume files</h2>
-        <p>
-          Comprehensive resume for ATS scanning not weighted for specific job<code>(Meant for ATS Scan)</code>.
-        </p>
-      </div>
-      <div class="resource-grid">
-    <!--    <a class="resource" href="media/resume.pdf" data-track="resume_pdf">
-          <strong>Resume PDF</strong><span>Best for recruiters and hiring systems</span>
-        </a> -->
-        <a class="resource" href="media/dan_segrest.docx" data-track="resume_docx">
-          <strong>Resume DOCX</strong><span>Editable Word version</span>
-        </a>
-      </div>
-    </section>
-<!--
-    <section class="section" id="samples">
-      <p class="section-kicker">Portfolio</p>
-      <h2>Selected work samples</h2>
-      <div class="sample-grid">
-        <article class="sample-card">
-          <h3>Detection Engineering Sample</h3>
-          <p>Sanitized detection logic, tuning notes, validation steps, and expected analyst workflow.</p>
-          <a href="media/detection-engineering-sample.pdf" data-track="sample_detection_pdf">Open PDF</a>
-        </article>
-        <article class="sample-card">
-          <h3>Splunk Architecture / Data Flow</h3>
-          <p>High-level architecture narrative, ingestion flow, normalization approach, and operational considerations.</p>
-          <a href="media/splunk-architecture-sample.pdf" data-track="sample_architecture_pdf">Open PDF</a>
-        </article>
-        <article class="sample-card">
-          <h3>Runbook / Playbook</h3>
-          <p>Example procedure showing triage logic, escalation criteria, and documentation style.</p>
-          <a href="media/runbook-sample.docx" data-track="sample_runbook_docx">Open DOCX</a>
-        </article>
-      </div>
-    </section>
--->
-    <section class="section split" id="media">
-      <div class="card">
-        <p class="section-kicker">Media</p>
-        <h2>Video and audio samples</h2>
-        <p>Use this area for a short walkthrough, demo, or spoken professional summary.</p>
-        <div class="media-box">
-          <h3>Audio Enhancement Transcription Pipeline With Embedded LLM RAG</h3>
-          <video controls preload="metadata" poster="assets/video-poster.svg" data-track="video_play">
-            <source src="media/portfolio-demo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="media-box">
-       <!--   <h3>Audio overview</h3>
-          <audio controls preload="metadata" data-track="audio_play">
-            <source src="media/audio-overview.mp3" type="audio/mpeg" />
-            Your browser does not support the audio tag.
-        </audio>
-        </div> -->
-      </div>
+.summary-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.25rem;
+}
 
-      <div class="card">
-        <p class="section-kicker">Scrollable notes</p>
-        <h2>Text boxes for details</h2>
-        <div class="scrollbox">
-          <h3>Professional summary</h3>
-          <section class="professional-summary">
-  <h2>Professional Summary</h2>
+.summary-highlights span {
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(88, 166, 255, 0.12);
+  border: 1px solid rgba(88, 166, 255, 0.28);
+  font-size: 0.85rem;
+  font-weight: 600;
+}.polished-summary {
+  padding: 1.5rem;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  border: 1px solid rgba(255,255,255,0.14);
+}
 
-  <p>
-    Dan is a senior <strong>cybersecurity, SIEM, cloud, and AI/ML engineering professional</strong>
-    with deep experience across Splunk Cloud, detection engineering, security operations,
-    enterprise telemetry, data quality, cloud security, and automation.
-  </p>
+.polished-summary h2 {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
 
-  <p>
-    He brings hands-on experience with modern security and cloud technologies, including
-    <strong>Splunk Cloud, Google SecOps, Wiz, AWS, Google Cloud, Azure, Cloudflare, Git,
-    GitHub Desktop, web deployment workflows, and CI/CD-style publishing pipelines</strong>.
-  </p>
+.summary-lead {
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
 
-  <p>
-    His background spans ingestion architecture, CIM normalization, datamodel engineering,
-    search optimization, queue health, endpoint telemetry integrity, dashboards, SOC enablement,
-    MDR support, compliance visibility, malware remediation, patch validation, and enterprise
-    Windows automation.
-  </p>
+.summary-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.25rem;
+}
 
-  <p>
-    Dan also brings personnel management and technical leadership experience, including team
-    guidance, employee development, hiring participation, performance evaluation, stakeholder
-    coordination, and translating complex engineering issues into clear operational direction.
-  </p>
-
-  <p>
-    Alongside his cybersecurity background, Dan has independently developed roughly
-    <strong>100 AI/ML projects</strong>, including local LLM deployments, RAG systems,
-    transcription and diarization tools, automation workflows, knowledge engineering, and
-    AI-assisted operational analysis.
-  </p>
-</section>
-          <p>
-            Example: Describe the problem, environment, tools used, your role, measurable result, and what was sanitized.
-          </p>
-        </div>
-        <div class="scrollbox">
-          <h3>Sample notes</h3>
-          <p>
-            Explain what each attached work sample demonstrates. Avoid proprietary data, customer names,
-            internal hostnames, private IP addresses, screenshots with sensitive details, or confidential diagrams.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section card" id="analytics">
-      <div class="analytics-head">
-        <div>
-          <p class="section-kicker">Visitor analytics</p>
-          <h2>Visit count and approximate state-level map</h2>
-          <p>
-            This uses a Cloudflare Function and KV binding when enabled. It aggregates by state/region and
-            does not show raw IP addresses on the page.
-          </p>
-        </div>
-        <div class="counter">
-          <span id="visitCount">—</span>
-          <small>recorded visits</small>
-        </div>
-      </div>
-      <div class="map-layout">
-        <div class="map-card">
-          <svg id="usMap" viewBox="0 0 960 600" role="img" aria-label="United States visitor map">
-            <image href="assets/us-outline.svg" x="0" y="0" width="960" height="600"></image>
-            <g id="pins"></g>
-          </svg>
-        </div>
-        <div class="state-list">
-          <h3>Recent state / region counts</h3>
-          <div id="stateCounts">Analytics not loaded yet.</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section card" id="contact">
-      <p class="section-kicker">Contact</p>
-      <h2>Contact information</h2>
-      <p>Email: <a href="mailto:your.email@example.com" data-track="email_click">dan.segrest@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/" data-track="linkedin_click">https://www.linkedin.com/in/dan-segrest-80b2ba2/</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© <span id="year"></span> (c)2026 Dan Segrest. Portfolio materials are sanitized for public sharing.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+.summary-highlights span {
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(88, 166, 255, 0.12);
+  border: 1px solid rgba(88, 166, 255, 0.28);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
