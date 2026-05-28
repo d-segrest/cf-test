@@ -7,20 +7,49 @@
   <meta name="description" content="Professional resume, cybersecurity portfolio, Splunk engineering, cloud security, AI/ML projects, and selected work samples." />
   <link rel="stylesheet" href="styles.css" />
   
-  <!-- Custom Overrides for Full Blue Background -->
+  <!-- Clean, Unified Custom Overrides -->
   <style>
-    /* Force the dark blue theme background to fill the entire page canvas */
+    /* 1. Force the dark blue theme background to fill the entire canvas */
     body {
-      background: #0b1220 !important; /* Replaces your CSS light gray (#eef3f8) */
+      background: #0b1220 !important; 
     }
 
-    /* Ensure cards adapt smoothly over the deeper blue canvas background */
-    .card, 
-    .sample-card {
+    /* 2. Ensure cards adapt smoothly over the deeper blue background */
+    .card, .sample-card {
       border: 1px solid rgba(255, 255, 255, 0.1) !important;
     }
+
+    /* 3. Make the dark hero copy box 100px wider */
+    .hero-copy {
+      max-width: 1140px !important; 
+    }
+
+    /* 4. Make the main headline font smaller */
+    .hero-copy h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem) !important;
+    }
+
+    /* 5. Make the professional summary scrollbox longer */
+    .scrollbox {
+      max-height: 500px !important;
+    }
   </style>
-      <section class="hero-grid">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">Dan Segrest</div>
+      <div class="nav-links">
+        <a href="#resume">Resume</a>
+        <a href="#samples">Work Samples</a>
+        <a href="#media">Media</a>
+        <a href="#analytics">Visitors</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    
+    <!-- FIXED: Moved hero-grid down to its correct position inside the body -->
+    <section class="hero-grid">
       <div class="hero-copy">
         <p class="eyebrow">Splunk • Google SecOps • Detection Engineering • SIEM • Cybersecurity • AI/ML</p>
         <h1>Dan Segrest<br />Resume & selected work samples</h1>
@@ -36,20 +65,6 @@
         <img src="assets/picture.png" alt="" />
       </div>
     </section>
-
-</head>
-<body>
-  <header class="hero">
-    <nav class="nav">
-      <div class="brand">Dan Segrest</div>
-      <div class="nav-links">
-        <a href="#resume">Resume</a>
-        <a href="#samples">Work Samples</a>
-        <a href="#media">Media</a>
-        <a href="#analytics">Visitors</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
   </header>
 
   <main>
@@ -72,15 +87,15 @@
       </div>
     </section>
 
-
-
     <section class="section split" id="media">
       <div class="card">
         <p class="section-kicker">Media</p>
         <h2>Video Samples, code available upon request:</h2>
-      <div class="media-box">
+        <div class="media-box">
           <h3>Audio Enhancement Transcription Pipeline With Embedded LLM RAG</h3>
-        <p>Imagine going to the supreme court regularly as a reporter. You need to get a transcription of the case to print as fast as possible. Though the SCOTUS provides such transcriptions later, you can already have it done, with enhanced noise cancelation,  diarized with every justice and any individual assigned proper ownership of their dialogue. Not only that, imaging automatically progressing to digesting these discussions into a Large Language Model LLM Retrieval Augmented Generated RAG query tool. </p>
+          <p>
+            Imagine going to the supreme court regularly as a reporter. You need to get a transcription of the case to print as fast as possible. Though the SCOTUS provides such transcriptions later, you can already have it done, with enhanced noise cancelation, diarized with every justice and any individual assigned proper ownership of their dialogue. Not only that, imagine automatically progressing to digesting these discussions into a Large Language Model LLM Retrieval Augmented Generated RAG query tool.
+          </p>
           <video controls preload="metadata" poster="assets/video-poster.svg" data-track="video_play">
             <source src="media/portfolio-demo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -114,6 +129,7 @@
         </div>
       </div>
     </section>
+
     <section class="section card" id="resume">
       <div>
         <p class="section-kicker">Resume</p>
@@ -131,6 +147,7 @@
         </a>
       </div>
     </section>
+
     <section class="section card" id="contact">
       <p class="section-kicker">Contact</p>
       <h2>Contact information</h2>
