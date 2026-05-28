@@ -24,6 +24,32 @@ async function loadStats() {
   }
 }
 
+
+// Cloudflare Worker main entry point
+export default {
+  async fetch(request, env, ctx) {
+    // 1. Check the country code
+    const country = request.cf?.country;
+
+    // 2. Allow US traffic and legitimate search bots
+    const isUS = country === 'US';
+    const isBot = request.cf?.asOrganization?.toLowerCase().includes('google') || false;
+
+    // 3. Block if it's outside the US
+    if (country && !isUS && !isBot) {
+      return new Response('Access Denied: This portfolio is restricted to US regions.', {
+        status: 403,
+        headers: { 'Content-Type': 'text/plain' },
+      });
+    }
+
+    // 4. If US, serve your HTML portfolio page
+    return new Response(htmlContent, {
+      headers: { 'content-type': 'text/html;charset=UTF-8' },
+    });
+  },
+};
+
 function renderStats(data) {
   document.getElementById('visitCount').textContent = data.totalVisits ?? 0;
   const pins = document.getElementById('pins');
