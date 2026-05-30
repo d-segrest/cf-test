@@ -1,6 +1,6 @@
 :root {
   --bg: #0b1220;
-  --panel: #f7f9fc;
+  --panel: #111a2e;
   --panel2: #f7f9fc;
   --text: #172033;
   --muted: #637083;
@@ -204,11 +204,10 @@ footer { padding: 20px 22px 45px; text-align: center; }
   font-weight: 700;
 }
 .left-box {
-  text-align: left; /* Aligns text to the left */
-  width: 200px;      /* Sets the width of the box */
-  padding: 10px;     /* Adds some breathing room inside the box */
-  border: 1px solid #aaa; /* Visual border for the box */
-        }
+  box-shadow: 0 20px 45px rgba(8, 20, 36, .14);
+  border-color: rgba(14, 165, 233, .45);
+  text-decoration: none;
+}
 .resume-note {
   margin-top: 18px;
   font-size: .95rem;
