@@ -1,5 +1,6 @@
 :root {
   --bg: #0b1220;
+  
   --panel: #111a2e;
   --panel2: #f7f9fc;
   --text: #172033;
@@ -79,7 +80,7 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); line-height: .98; margin: 14px 0 20p
 main { padding: 34px 22px 70px; }
 .section { margin-top: 28px; }
 .card, .sample-card { background: var(--white); border: 1px solid var(--line); border-radius: 28px; padding: 30px; box-shadow: var(--shadow); }
-.featured-card { min-height: 335px; display: grid; align-content: center; }
+.featured-card { min-height: 150px; display: grid; align-content: center; }
 h2 { font-size: clamp(1.6rem, 3vw, 2.55rem); margin: 8px 0 10px; letter-spacing: -.025em; }
 p { line-height: 1.65; color: var(--muted); }
 .ticker-wrap { overflow: hidden; border-radius: 999px; background: #0f1c31; margin-top: -58px; box-shadow: var(--shadow); position: relative; z-index: 4; }
