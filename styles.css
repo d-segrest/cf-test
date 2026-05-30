@@ -76,7 +76,7 @@ h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); line-height: .98; margin: 14px 0 20p
   box-shadow: 0 24px 70px rgba(0,0,0,.22);
   transform: translateX(24px);
 }
-.hero-art img { width: 170px; max-height: 330px; display: block; opacity: .88; }
+.hero-art img { width: 170px; max-height: 130px; display: block; opacity: .88; }
 main { padding: 34px 22px 70px; }
 .section { margin-top: 28px; }
 .card, .sample-card { background: var(--white); border: 1px solid var(--line); border-radius: 28px; padding: 30px; box-shadow: var(--shadow); }
