@@ -30,7 +30,7 @@ code { background: #eef2f7; padding: 2px 6px; border-radius: 6px; }
     radial-gradient(circle at 88% 12%, rgba(56,189,248,.20), transparent 22%),
     radial-gradient(circle at 9% 10%, rgba(14,165,233,.25), transparent 32%),
     linear-gradient(135deg, #06101d 0%, #0a1b31 48%, #102744 100%);
-  min-height: 640px;
+  min-height: 100px;
   padding: 26px 32px 84px;
 }
 .nav, .hero-grid, main, footer { max-width: 1320px; margin: 0 auto; }
