@@ -203,11 +203,11 @@ footer { padding: 20px 22px 45px; text-align: center; }
   color: var(--muted);
   font-weight: 700;
 }
-        .left-box {
-            text-align: left; /* Aligns text to the left */
-            width: 200px;      /* Sets the width of the box */
-            padding: 10px;     /* Adds some breathing room inside the box */
-            border: 1px solid #ccc; /* Visual border for the box */
+.left-box {
+  text-align: left; /* Aligns text to the left */
+  width: 200px;      /* Sets the width of the box */
+  padding: 10px;     /* Adds some breathing room inside the box */
+  border: 1px solid #aaa; /* Visual border for the box */
         }
 .resume-note {
   margin-top: 18px;
